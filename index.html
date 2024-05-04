@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cal_icon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>FD Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cal_box">
+            <h1>FD CALCULATOR</h1>
+            <div class="parts">
+                <div class="part">
+                    <p>Principal Amount</p>
+                    <input id="principal" type="number" min="1000" max="10000000">
+                </div>
+                <div class="part">
+                    <p>Rate of Interest (Per Anum.)</p>
+                    <input id="rateOfInt" type="number" min="0" max="50">
+                </div>
+                <div class="part">
+                    <p>Time Period (Years)</p>
+                    <input id="duration" type="number" min="0" max="50">
+                </div>
+            </div>
+
+            <button id="submitBtn">Submit</button>
+
+            <div class="details">
+                <div class="text">
+                    <p>Invested Amount</p>
+                    <p>Estimate Returns</p>
+                    <p>Total Value</p>
+                </div>
+                <div class="values">
+                    <p id="invested"></p>
+                    <p id="estimate"></p>
+                    <p id="returns"></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
